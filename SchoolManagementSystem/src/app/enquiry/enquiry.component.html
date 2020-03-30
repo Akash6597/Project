@@ -1,0 +1,11 @@
+<p>enquiry</p>
+<div class="container">
+    <form [formGroup]="enquiryFormGroup">
+        <div class="form-group">
+            Enquiry Detail:<input type="text" formControlName="details">
+            <small class="form-text text-danger"
+            *ngIf="enquiryFormGroup.controls.details.invalid && enquiryFormGroup.controls.details.touched">Detail is Required</small>
+        </div>
+    </form>
+    <button class="btn btn-primary" (click)="addenquiry()" [disabled]="!enquiryFormGroup.valid">Add Enquiry</button>
+</div>

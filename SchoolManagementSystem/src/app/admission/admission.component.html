@@ -1,0 +1,15 @@
+<p>admission works!</p>
+<div class="container">
+    <form formGroup="admissionFormGroup">
+        <div class="form-group">
+           Student Name: <input type="text" formControlName="studentName" required>
+           <small class="form-text text-danger"
+           *ngIf="admissionFormGroup.controls.studentName.invalid && admissionFormGroup.controls.studentName.touched">Student Name is Required</small>
+        </div>
+
+        <div class="form-group">
+           Std Id: <input type="text" formControlName="StdId" required>
+        </div>
+    </form>
+    <button class="btn btn-primary" [disabled]="!admissionFormGroup.valid" type="submit">Addmission</button>
+</div>

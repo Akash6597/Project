@@ -1,0 +1,19 @@
+<p>fees</p>
+<div class="container">
+    <form [formGroup]="feesFormGroup">
+        <div class="form-group">
+          Fees Paid:  <input type="text" formControlName="feespaid" required>
+          <small class="form-text text-danger"
+          *ngIf="feesFormGroup.controls.feespaid.invalid && feesFormGroup.controls.feespaid.touched">Fees is Required</small>
+        </div>
+        <div class="form-group">
+           Student Id: <input type="studentId" formControlName="studentid" required>
+
+        </div>
+        <div class="form-group">
+           StdId: <input type="text" formControlName="stdId" required>
+        </div>
+
+    </form>
+    <button class="btn btn-primary" (click)="addfees()">Add Fees</button>
+</div>
