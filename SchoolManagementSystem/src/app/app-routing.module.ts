@@ -4,7 +4,7 @@ import { ParentsRegistrationComponent } from './parents-registration/parents-reg
 import { AdmissionComponent } from './admission/admission.component';
 import { EnquiryComponent } from './enquiry/enquiry.component';
 import { FeesComponent } from './fees/fees.component';
-
+import {StudentDetailsComponent} from './student-details/student-details.component'
 
 const routes: Routes = [{
   path:'',component:ParentsRegistrationComponent
@@ -14,6 +14,8 @@ const routes: Routes = [{
   path:'enquiry',component:EnquiryComponent
 },{
   path:'fees',component:FeesComponent
+},{
+  path:'details',component:StudentDetailsComponent
 }];
 
 @NgModule({

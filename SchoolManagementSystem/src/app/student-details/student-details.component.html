@@ -1,0 +1,15 @@
+<p>student-details</p>
+<table>
+    <tr>
+        <th>StudentRollNumber</th>
+        <th>StudentName</th>
+        <th>ParentId</th>
+        <th>StdId</th>
+    </tr>
+    <tbody *ngFor="let list of studentlist">
+    <td>{{list.StudentRollNo}}</td>
+    <td>{{list.StudentName}}</td>
+    <td>{{list.ParentId}}</td>
+    <td>{{list.StdId}}</td>
+</tbody>
+</table>

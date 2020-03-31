@@ -9,6 +9,7 @@ import { ParentsRegistrationComponent } from './parents-registration/parents-reg
 import { EnquiryComponent } from './enquiry/enquiry.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { FeesComponent } from './fees/fees.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FeesComponent } from './fees/fees.component';
     ParentsRegistrationComponent,
     EnquiryComponent,
     AdmissionComponent,
-    FeesComponent
+    FeesComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
