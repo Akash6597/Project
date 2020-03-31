@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-fees',
@@ -8,7 +9,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FeesComponent implements OnInit {
   feesFormGroup:FormGroup;
-  constructor(private formBuilder:FormBuilder) { }
+  result:any;
+  readonly rootURL = 'https://localhost:44384/api';
+
+  constructor(private formBuilder:FormBuilder,private httpService: HttpClient) { }
 
   ngOnInit(): void {
     this.feesFormGroup=this.formBuilder.group({
@@ -18,6 +22,12 @@ export class FeesComponent implements OnInit {
     })
   }
   addfees(){
-    
+    let fees=this.feesFormGroup.controls.feespaid.value
+    let studentId=this.feesFormGroup.controls.studentid.value
+    let stdId=this.feesFormGroup.controls.stdId.value
+    this.httpService.post<any>(this.rootURL+'/feesdetails',{FeesPaid:fees,StudentId:studentId,StdId:stdId}).subscribe(res=>{
+      this.result=res;
+      console.log(this.result);
+  })
   }
 }
