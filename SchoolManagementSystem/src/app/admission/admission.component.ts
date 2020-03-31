@@ -25,7 +25,8 @@ submit(){
   let rollno=this.admissionFormGroup.controls.studentRollNo.value
   let pid=this.admissionFormGroup.controls.parentId.value
   let sid=this.admissionFormGroup.controls.stdId.value
-  this.httpService.post<any>(this.rootURL+'/studentdetails',{studentRollNo:rollno,StudentName:this.admissionFormGroup.controls.studentName,ParentId:pid,StdId:sid}).subscribe(res=>{
+  
+  this.httpService.post<any>(this.rootURL+'/studentdetails',{studentRollNo:rollno,StudentName:this.admissionFormGroup.controls.studentName.value,ParentId:pid,StdId:sid}).subscribe(res=>{
     this.result=res;
     console.log(this.result);
   })

@@ -2,16 +2,16 @@
 <div class="container">
     <form [formGroup]="feesFormGroup">
         <div class="form-group">
-          Fees Paid:  <input type="text" formControlName="feespaid" required>
-          <small class="form-text text-danger"
-          *ngIf="feesFormGroup.controls.feespaid.invalid && feesFormGroup.controls.feespaid.touched">Fees is Required</small>
+          Fees Paid:  <input type="number" formControlName="feespaid" required>
+          <!-- <small class="form-text text-danger" -->
+          <!-- *ngIf="feesFormGroup.controls.feespaid.invalid && feesFormGroup.controls.feespaid.touched">Fees is Required</small> -->
         </div>
         <div class="form-group">
-           Student Id: <input type="studentId" formControlName="studentid" required>
+           Student Id: <input type="number" formControlName="studentid" required>
 
         </div>
         <div class="form-group">
-           StdId: <input type="text" formControlName="stdId" required>
+           StdId: <input type="number" formControlName="stdid" required>
         </div>
 
     </form>

@@ -1,0 +1,15 @@
+<p>parent-details</p>
+<table>
+    <tr>
+       <th>Parent Name</th>
+       <th>Email</th>
+       <th>Mobile Number</th>
+       <th>Address</th>
+    </tr>
+    <tbody *ngFor="let list of parentlist">
+    <td>{{list.ParentName}}</td>
+    <td>{{list.ParentEmail}}</td>
+    <td>{{list.ParentMobileNumber}}</td>
+    <td>{{list.ParentAddress}}</td>
+   </tbody>
+ </table>

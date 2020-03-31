@@ -10,6 +10,9 @@ import { EnquiryComponent } from './enquiry/enquiry.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { FeesComponent } from './fees/fees.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { ParentDetailsComponent } from './parent-details/parent-details.component';
+import { FeesDetailsComponent } from './fees-details/fees-details.component';
+import { EnquiryDetailsComponent } from './enquiry-details/enquiry-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     EnquiryComponent,
     AdmissionComponent,
     FeesComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    ParentDetailsComponent,
+    FeesDetailsComponent,
+    EnquiryDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class ParentsRegistrationComponent implements OnInit {
 parentFormGroup:FormGroup;
 result:any
-parentlist=[]
 readonly rootURL = 'https://localhost:44384/api';
 
   constructor(private formBuilder:FormBuilder,private router:Router,private httpService: HttpClient) { }
@@ -23,11 +22,7 @@ readonly rootURL = 'https://localhost:44384/api';
       password:['',Validators.required],
       address:['',Validators.required]
     })
-    this.httpService.get<any>('https://localhost:44384/api/parentdetails').subscribe(res=>{
-      this.result=res;
-      console.log(this.result);
-      this.parentlist=this.result;
-    })
+
   }
  add(){
    let mobilenumber=this.parentFormGroup.controls.mobile.value
