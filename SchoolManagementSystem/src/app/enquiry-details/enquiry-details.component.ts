@@ -13,7 +13,7 @@ export class EnquiryDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.httpService.get<any>('https://localhost:44384/api/enquirydetails').subscribe(res=>{
-      this.result=res;
+      this.enquirylist=res;
       console.log(this.result);
       this.enquirylist=this.result;
     })
