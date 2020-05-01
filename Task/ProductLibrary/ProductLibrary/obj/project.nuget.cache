@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4TznwMuzYli+pYe9fqh2/YFJtvftSy57pdqITAHSi7Yqpqkbh9v6oIL6BFIMT15qWx8OPvFGXVrHYvmrQEfLIg==",
+  "success": true,
+  "projectFilePath": "E:\\Project\\Task\\ProductLibrary\\ProductLibrary\\ProductLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akash\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\akash\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

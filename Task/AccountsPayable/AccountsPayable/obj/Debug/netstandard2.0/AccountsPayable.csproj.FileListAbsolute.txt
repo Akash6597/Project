@@ -1,0 +1,8 @@
+E:\Project\Task\AccountsPayable\AccountsPayable\bin\Debug\netstandard2.0\AccountsPayable.deps.json
+E:\Project\Task\AccountsPayable\AccountsPayable\bin\Debug\netstandard2.0\AccountsPayable.dll
+E:\Project\Task\AccountsPayable\AccountsPayable\bin\Debug\netstandard2.0\AccountsPayable.pdb
+E:\Project\Task\AccountsPayable\AccountsPayable\obj\Debug\netstandard2.0\AccountsPayable.csproj.CoreCompileInputs.cache
+E:\Project\Task\AccountsPayable\AccountsPayable\obj\Debug\netstandard2.0\AccountsPayable.AssemblyInfoInputs.cache
+E:\Project\Task\AccountsPayable\AccountsPayable\obj\Debug\netstandard2.0\AccountsPayable.AssemblyInfo.cs
+E:\Project\Task\AccountsPayable\AccountsPayable\obj\Debug\netstandard2.0\AccountsPayable.dll
+E:\Project\Task\AccountsPayable\AccountsPayable\obj\Debug\netstandard2.0\AccountsPayable.pdb

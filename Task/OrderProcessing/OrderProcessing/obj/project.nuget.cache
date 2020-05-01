@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9xub4XxNf3HiGUX2Apk0veneFYsPu/43Rhdm0jLBxoyebgIAlgIFkSILrgIjRgvjnU+rI/0ohWgHVnOl+Ee0wA==",
+  "success": true,
+  "projectFilePath": "E:\\Project\\Task\\OrderProcessing\\OrderProcessing\\OrderProcessing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akash\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\akash\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

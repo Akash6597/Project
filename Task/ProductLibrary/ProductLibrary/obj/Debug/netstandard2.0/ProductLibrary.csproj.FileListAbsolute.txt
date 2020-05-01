@@ -1,0 +1,9 @@
+E:\Project\Task\ProductLibrary\ProductLibrary\bin\Debug\netstandard2.0\ProductLibrary.deps.json
+E:\Project\Task\ProductLibrary\ProductLibrary\bin\Debug\netstandard2.0\ProductLibrary.dll
+E:\Project\Task\ProductLibrary\ProductLibrary\bin\Debug\netstandard2.0\ProductLibrary.pdb
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.csprojAssemblyReference.cache
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.csproj.CoreCompileInputs.cache
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.AssemblyInfoInputs.cache
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.AssemblyInfo.cs
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.dll
+E:\Project\Task\ProductLibrary\ProductLibrary\obj\Debug\netstandard2.0\ProductLibrary.pdb

@@ -1,0 +1,8 @@
+E:\Project\Task\AccountsReceivable\AccountsReceivable\bin\Debug\netstandard2.0\AccountsReceivable.deps.json
+E:\Project\Task\AccountsReceivable\AccountsReceivable\bin\Debug\netstandard2.0\AccountsReceivable.dll
+E:\Project\Task\AccountsReceivable\AccountsReceivable\bin\Debug\netstandard2.0\AccountsReceivable.pdb
+E:\Project\Task\AccountsReceivable\AccountsReceivable\obj\Debug\netstandard2.0\AccountsReceivable.csproj.CoreCompileInputs.cache
+E:\Project\Task\AccountsReceivable\AccountsReceivable\obj\Debug\netstandard2.0\AccountsReceivable.AssemblyInfoInputs.cache
+E:\Project\Task\AccountsReceivable\AccountsReceivable\obj\Debug\netstandard2.0\AccountsReceivable.AssemblyInfo.cs
+E:\Project\Task\AccountsReceivable\AccountsReceivable\obj\Debug\netstandard2.0\AccountsReceivable.dll
+E:\Project\Task\AccountsReceivable\AccountsReceivable\obj\Debug\netstandard2.0\AccountsReceivable.pdb

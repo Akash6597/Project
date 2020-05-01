@@ -1,0 +1,9 @@
+E:\Project\Task\OrderProcessing\OrderProcessing\bin\Debug\netstandard2.0\OrderProcessing.deps.json
+E:\Project\Task\OrderProcessing\OrderProcessing\bin\Debug\netstandard2.0\OrderProcessing.dll
+E:\Project\Task\OrderProcessing\OrderProcessing\bin\Debug\netstandard2.0\OrderProcessing.pdb
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.csprojAssemblyReference.cache
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.csproj.CoreCompileInputs.cache
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.AssemblyInfoInputs.cache
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.AssemblyInfo.cs
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.dll
+E:\Project\Task\OrderProcessing\OrderProcessing\obj\Debug\netstandard2.0\OrderProcessing.pdb
