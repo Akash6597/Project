@@ -1,4 +1,5 @@
-﻿namespace CompanyA.Accounting
+﻿
+namespace CompanyA.Accounting
 {
     public class Payable
     {

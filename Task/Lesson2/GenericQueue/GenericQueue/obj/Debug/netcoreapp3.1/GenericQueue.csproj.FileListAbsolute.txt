@@ -1,0 +1,12 @@
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.exe
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.deps.json
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.runtimeconfig.json
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.runtimeconfig.dev.json
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.dll
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\bin\Debug\netcoreapp3.1\GenericQueue.pdb
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.csproj.CoreCompileInputs.cache
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.AssemblyInfoInputs.cache
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.AssemblyInfo.cs
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.dll
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.pdb
+E:\Project\Task\Lesson2\GenericQueue\GenericQueue\obj\Debug\netcoreapp3.1\GenericQueue.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.exe
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.deps.json
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.runtimeconfig.json
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.runtimeconfig.dev.json
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.dll
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\bin\Debug\netcoreapp3.1\TwoDimensionalArray.pdb
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.csprojAssemblyReference.cache
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.csproj.CoreCompileInputs.cache
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.AssemblyInfoInputs.cache
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.AssemblyInfo.cs
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.dll
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.pdb
+E:\Project\Task\Lesson2\TwoDimensionalArray\TwoDimensionalArray\obj\Debug\netcoreapp3.1\TwoDimensionalArray.genruntimeconfig.cache

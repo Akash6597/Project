@@ -1,0 +1,13 @@
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.exe
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.deps.json
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.runtimeconfig.json
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.runtimeconfig.dev.json
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.dll
+E:\Project\Task\Lesson2\GenericStack\GenericStack\bin\Debug\netcoreapp3.1\GenericStack.pdb
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.csprojAssemblyReference.cache
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.csproj.CoreCompileInputs.cache
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.AssemblyInfoInputs.cache
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.AssemblyInfo.cs
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.dll
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.pdb
+E:\Project\Task\Lesson2\GenericStack\GenericStack\obj\Debug\netcoreapp3.1\GenericStack.genruntimeconfig.cache

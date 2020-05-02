@@ -1,0 +1,13 @@
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.exe
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.deps.json
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.runtimeconfig.json
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.runtimeconfig.dev.json
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.dll
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\bin\Debug\netcoreapp3.1\GenericLinkedList.pdb
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.csprojAssemblyReference.cache
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.csproj.CoreCompileInputs.cache
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.AssemblyInfoInputs.cache
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.AssemblyInfo.cs
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.dll
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.pdb
+E:\Project\Task\Lesson2\GenericLinkedList\GenericLinkedList\obj\Debug\netcoreapp3.1\GenericLinkedList.genruntimeconfig.cache
