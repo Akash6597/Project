@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LinqDemo
 {
@@ -11,15 +13,26 @@ namespace LinqDemo
         {
             employee[] emp =
             {
-                new employee(){employeeid=1,firstname="John",lastname="Abraham",salary=1000000,joiningdate=new DateTime(01,1,13, 12,00,00),department="Banking"},
-                new employee(){employeeid=2,firstname="Michael",lastname="Clarke",salary=800000,joiningdate=new DateTime(01,1,13,12,00,00),department="Insurance"},
-                new employee(){employeeid=3,firstname="Roy",lastname="Thomas",salary=700000,joiningdate=new DateTime(01,2,13,12,00,00),department="Banking"},
-                new employee(){employeeid=4,firstname="Tom",lastname="Jose",salary=600000,joiningdate=new DateTime(01,2,13,12,00,00),department="Insurance"},
-                new employee(){employeeid=5,firstname="Jerry",lastname="Pinto",salary=650000,joiningdate=new DateTime(01,2,13,12,00,00),department="Insurance"},
-                new employee(){employeeid=6,firstname="Philip",lastname="Mathew",salary=750000,joiningdate=new DateTime(01,1,13,12,00,00),department="Services"},
-                new employee(){employeeid=7,firstname="Test Name1",lastname="123",salary=650000,joiningdate=new DateTime(01,1,13,12,00,00),department="Services"},
-                new employee(){employeeid=8,firstname="Test Name2",lastname="Lname%",salary=600000,joiningdate=new DateTime(01,2,13,12,00,00),department="Insurance"}
+                new employee(){employeeid=1,firstname="John",lastname="Abraham",salary=1000000,joiningdate=new DateTime(2013,1,01, 12,00,00),department="Banking"},
+                new employee(){employeeid=2,firstname="Michael",lastname="Clarke",salary=800000,joiningdate=new DateTime(2013,1,01,12,00,00),department="Insurance"},
+                new employee(){employeeid=3,firstname="Roy",lastname="Thomas",salary=700000,joiningdate=new DateTime(2013,2,01,12,00,00),department="Banking"},
+                new employee(){employeeid=4,firstname="Tom",lastname="Jose",salary=600000,joiningdate=new DateTime(2013,2,01,12,00,00),department="Insurance"},
+                new employee(){employeeid=5,firstname="Jerry",lastname="Pinto",salary=650000,joiningdate=new DateTime(2013,2,01,12,00,00),department="Insurance"},
+                new employee(){employeeid=6,firstname="Philip",lastname="Mathew",salary=750000,joiningdate=new DateTime(2013,1,01,12,00,00),department="Services"},
+                new employee(){employeeid=7,firstname="Test Name1",lastname="123",salary=650000,joiningdate=new DateTime(2013,1,01,12,00,00),department="Services"},
+                new employee(){employeeid=8,firstname="Test Name2",lastname="Lname%",salary=600000,joiningdate=new DateTime(2013,2,01,12,00,00),department="Insurance"}
+
             };
+
+            incentives[] incentive =
+            {
+
+                new incentives() { employeerefid = 1, IncentiveDate = new DateTime(2013,2,01) , incentiveamount = 5000 },
+                new incentives() { employeerefid = 2, IncentiveDate = new DateTime(2013,2,01) , incentiveamount = 3000 },
+                new incentives() { employeerefid = 3, IncentiveDate = new DateTime(2013,2,01) , incentiveamount = 4000 },
+                new incentives() { employeerefid = 1, IncentiveDate = new DateTime(2013,1,01) , incentiveamount = 4500 },
+                new incentives() { employeerefid = 2, IncentiveDate = new DateTime(2013,1,01) , incentiveamount = 3500 },
+  };
             //2. Select All in Employee
 
             /* var basicQuery = (from e in emp select e).ToList();
@@ -374,13 +387,92 @@ namespace LinqDemo
             }*/
 
             //31.
+            /*var Employee = from e in emp
+                           where e.joiningdate.Year == 2013
+                           select new
+                           {
+                               e.firstname
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.firstname);
+            }*/
+
             //32.
+            /*var Employee = from e in emp
+                           where e.joiningdate.Month == 1
+                           select new
+                           {
+                               e.firstname
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.firstname);
+            }*/
             //33.
+
+            /*var Employee = from e in emp where e.joiningdate < new DateTime(2013,01,31) 
+                           select new
+                           {
+                               e.firstname,
+                               e.joiningdate
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.firstname);
+                Console.WriteLine(n.joiningdate);
+            }*/
             //34.
+            /*var Employee = from e in emp
+                           where e.joiningdate > new DateTime(2013, 01, 31)
+                           select new
+                           {
+                               e.firstname,
+                               e.joiningdate
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.firstname);
+                Console.WriteLine(n.joiningdate);
+            }*/
             //35.
+            /*var Employee = from e in emp
+                           select new
+                           {
+                               e.firstname,
+                               date=e.joiningdate.Date,
+                               time=e.joiningdate.TimeOfDay
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.firstname);
+                Console.WriteLine(n.date);
+                Console.WriteLine(n.time);
+            }*/
             //36.
+            /*var Employee = from e in emp
+                           select new
+                           {
+                               e.firstname,
+                               date = e.joiningdate
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.date);
+
+            }*/
             //37.
-            //38.
+            /*var join = from e in emp
+                       join i in incentive on e.employeeid equals i.employeerefid
+                       
+                       select new
+                       {
+                            days=e.joiningdate -i.IncentiveDate
+                       };
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.days);
+            }*/
 
             //39.
             /*var Employee = from e in emp
@@ -428,7 +520,7 @@ namespace LinqDemo
                            select new
                            {
                                dep = departments.Key,
-                               
+
                                totalSalary = departments.Sum(x => x.salary)
                            }).OrderBy(x=>x.totalSalary);
             foreach (var dep in Employee)
@@ -454,13 +546,13 @@ namespace LinqDemo
             }*/
 
             //44.
-            var Employee = (from e in emp
+            /*var Employee = (from e in emp
                             group e by e.department into departments
                             select new
                             {
                                 dep = departments.Key,
                                 count=departments.Count(),
-
+                                AvgSalary = departments.Average(x => x.salary),
                                 totalSalary = departments.Sum(x => x.salary)
                             }).OrderByDescending (x => x.totalSalary) ;
             foreach (var dep in Employee)
@@ -468,7 +560,209 @@ namespace LinqDemo
                 Console.WriteLine(dep.dep);
                 Console.WriteLine(dep.totalSalary);
                 Console.WriteLine(dep.count);
-            }
+                Console.WriteLine(dep.AvgSalary);
+            }*/
+
+            //45.
+            /* var Employee = (from e in emp
+                             group e by e.department into departments
+                             select new
+                             {
+                                 dep=departments.Key,
+                                 maxsal=departments.Max(x=>x.salary),
+                             }).OrderBy(x => x.maxsal);
+             foreach (var max in Employee) {
+                 Console.WriteLine(max.dep);
+                 Console.WriteLine(max.maxsal);
+             }*/
+
+            //46.
+            /*var Employee = (from e in emp
+                            group e by e.department into departments
+                            select new
+                            {
+                                dep = departments.Key,
+                                minsal = departments.Min(x => x.salary),
+                            }).OrderBy(x => x.minsal);
+            foreach (var min in Employee)
+            {
+                Console.WriteLine(min.dep);
+                Console.WriteLine(min.minsal);
+            }*/
+
+            //47.
+            /*var Employee = from e in emp
+
+                           select new
+                           {
+                               year=e.joiningdate.Year,
+                               month=e.joiningdate.Month
+                           };
+            foreach (var n in Employee)
+            {
+                Console.WriteLine(n.year);
+                Console.WriteLine(n.month);
+            }*/
+
+            //48.
+            /*var Employee = (from e in emp 
+                            group e by e.department into departments
+                            select new
+                            {
+                                dep = departments.Key,
+
+                                totalSalary = departments.Sum(x => x.salary ) 
+
+                            }).Where(x=>x.totalSalary>800000).OrderByDescending (x => x.totalSalary  )  ;
+            foreach (var dep in Employee)
+            {
+                Console.WriteLine(dep.dep);
+                Console.WriteLine(dep.totalSalary);
+            }*/
+
+            //49.
+            /*var join = from e in emp
+                       join i in incentive on e.employeeid equals i.employeerefid 
+
+                       select new
+                       {
+                           name = e.firstname,
+                           amount = i.incentiveamount
+                       };
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.amount);
+            }*/
+
+            //50.
+            /*var join = (from e in emp
+                       join i in incentive on e.employeeid equals i.employeerefid
+                       select new
+                       {
+                           name=e.firstname,
+                           amount=i.incentiveamount 
+                       }).Where(x => x.amount > 3000);
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.amount);
+            }*/
+
+            //51.
+            /*var join = from e in emp
+                       join i in incentive on e.employeeid equals i.employeerefid into empGroup
+                       from i in empGroup.DefaultIfEmpty()
+                       select new
+                       {
+                           name = e.firstname,
+                           amount = i == null ? 0 : i.incentiveamount
+                       };
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.amount);
+            }*/
+            //52.
+            /*var join = from e in emp
+                       join i in incentive on e.employeeid equals i.employeerefid into empGroup
+                       from i in empGroup.DefaultIfEmpty()
+                       select new
+                       {
+                           name = e.firstname,
+                           amount = i == null ? 0 : i.incentiveamount
+                       };
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.amount);
+            }*/
+
+            //54.
+            /*var Employee = (from e in emp
+                           select new
+                           {
+                               Salary = e.salary
+                           }).OrderBy(x=>x.Salary).Take(2);
+            foreach (var name in Employee)
+            {
+                Console.WriteLine(name);
+            }*/
+
+            //55.
+            /*var Employee = (from e in emp
+                            select new
+                            {
+                                Salary = e.salary
+                            }).Take(5);
+            foreach (var name in Employee)
+            {
+                Console.WriteLine(name);
+            }*/
+
+            //56.
+            /*var Employee = emp.OrderByDescending(x=>x.salary).Select(x=>x.salary).Skip(1).First();
+            Console.WriteLine(Employee);*/
+
+            //58.
+            /*var query = (from e in emp select new { name = e.firstname })
+                .Union(from r in emp select new { name = r.lastname }).ToList();
+            foreach (var item in query) {
+                Console.WriteLine(item);
+            }*/
+
+            //60.
+            /*var join = from i in incentive
+                       join e in emp on i.employeerefid equals e.employeeid 
+                       select new
+                       {
+                           name = e.firstname,
+                           amount = i.incentiveamount
+                       };
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.amount);
+            }*/
+
+            //62.
+            /*var Employee = from e in emp
+                       from i in incentive  
+                            select new
+                            {
+                                name = e.firstname,
+                                incentive = i.incentiveamount
+                            };
+
+            foreach (var item in Employee)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.incentive);
+            }*/
+
+            //63.
+            /*var join = (from e in emp             
+                        select new
+                        {
+                            salary = e.salary*0.15
+                        });
+            foreach (var item in join)
+            {
+                Console.WriteLine(item.salary );
+            }*/
+
+            //64.
+            /*var Employee = from e in emp
+
+                           group e by e.department into departments
+                           select new
+                           {
+                               dep = departments.Key +" Dept",
+                           };
+            foreach (var dep in Employee)
+            {
+                Console.WriteLine(dep.dep);
+            }*/
         }
     }
     class employee
@@ -479,5 +773,11 @@ namespace LinqDemo
         public int salary;
         public DateTime joiningdate;
         public string department;
+    }
+    class incentives
+    {
+        public int employeerefid;
+        public DateTime IncentiveDate;
+        public int incentiveamount;
     }
 }
