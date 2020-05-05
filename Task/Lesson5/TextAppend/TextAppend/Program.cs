@@ -7,11 +7,15 @@ namespace TextAppend
     {
         static void Main(string[] args)
         {
-            using (StreamWriter w = File.AppendText("LogFile.txt"))
+            using (StreamWriter w =
+              File.AppendText("LogFile.txt"))
             {
-                w.WriteLine( String.Format("Logged on: {0}\n",  DateTime.Now));
+                w.WriteLine(
+                    String.Format("Logged on: {0}\n",
+                    DateTime.Now));
             }
-            using (StreamReader r = File.OpenText("LogFile.txt"))
+            using (StreamReader r
+                = File.OpenText("LogFile.txt"))
             {
                 string line;
                 while ((line = r.ReadLine()) != null)
