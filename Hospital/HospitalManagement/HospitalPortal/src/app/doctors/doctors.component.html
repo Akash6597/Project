@@ -1,0 +1,23 @@
+<p>doctors works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>DoctorId</th>
+            <th>DoctorName</th>
+            <th>DoctorMobileNo</th>
+            <th>DoctorEmail</th>
+            <th>DoctorAddress</th>
+            <th>DepartmentId</th>
+        </tr>
+    </thead>
+
+        <tr *ngFor="let d of doctor">
+            <td>{{d.doctorId}}</td>
+            <td>{{d.doctorName}}</td>
+            <td>{{d.doctorMobileNo}}</td>
+            <td>{{d.doctorEmail}}</td>
+            <td>{{d.doctorAddress}}</td>
+            <td>{{d.departmentId}}</td>
+        </tr>
+
+    </table>

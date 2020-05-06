@@ -1,0 +1,20 @@
+<button  [routerLink]="['/adddepartment']">Add Department</button>
+
+<p>departments works!</p>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Department Id</th>
+                <th>Department Name</th>
+            </tr>
+        </thead>
+
+            <tr *ngFor="let d of department">
+                <td>{{d.departmentId}}</td>
+                <td>{{d.departmentName}}</td>
+            </tr>
+
+        </table>
+</div>
