@@ -1,1 +1,25 @@
 <p>assistants works!</p>
+<button  [routerLink]="['/addassistant']">Add Assistant</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>AssistantId</th>
+            <th>assistantName</th>
+            <th>assistantMobileNo</th>
+            <th>assistantEmail</th>
+            <th>assistantAddress</th>
+            <th>DepartmentId</th>
+        </tr>
+    </thead>
+
+        <tr *ngFor="let d of assistant">
+            <td>{{d.assistantId}}</td>
+            <td>{{d.assistantName}}</td>
+            <td>{{d.assistantMobileNo}}</td>
+            <td>{{d.assistantEmail}}</td>
+            <td>{{d.assistantAddress}}</td>
+            <td>{{d.departmentId}}</td>
+        </tr>
+
+    </table>

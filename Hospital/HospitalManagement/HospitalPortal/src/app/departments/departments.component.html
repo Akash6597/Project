@@ -1,6 +1,11 @@
-<button  [routerLink]="['/adddepartment']">Add Department</button>
-
+<button  [routerLink]="['/doctors']">Doctors</button>
+<button  [routerLink]="['/assistants']">Assitant</button>
+<button  [routerLink]="['/patients']">Patient</button>
+<button  [routerLink]="['/medicines']">Medicine</button>
+<button  [routerLink]="['/visits']">Visits</button>
 <p>departments works!</p>
+
+<button  [routerLink]="['/adddepartment']">Add Department</button>
 
 <div>
     <table>
@@ -14,6 +19,7 @@
             <tr *ngFor="let d of department">
                 <td>{{d.departmentId}}</td>
                 <td>{{d.departmentName}}</td>
+                <!-- <td><a href="" [routerLink]="['/doctors',d.departmentId]">view</a></td> -->
             </tr>
 
         </table>

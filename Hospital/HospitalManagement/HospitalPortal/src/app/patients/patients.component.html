@@ -1,1 +1,25 @@
 <p>patients works!</p>
+<button  [routerLink]="['/addpatient']">Add Patient</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>PatientId</th>
+            <th>PatientName</th>
+            <th>PatientMobileNo</th>
+            <th>PatientEmail</th>
+            <th>PatientAge</th>
+            <th>PatientAddress</th>
+        </tr>
+    </thead>
+
+        <tr *ngFor="let p of patient">
+            <td>{{p.patientId}}</td>
+            <td>{{p.patientName}}</td>
+            <td>{{p.patientMobileNo}}</td>
+            <td>{{p.patientEmail}}</td>
+            <td>{{p.patientAddress}}</td>
+            <td>{{p.patientAge}}</td>
+        </tr>
+
+    </table>

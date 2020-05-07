@@ -22,4 +22,5 @@ export class DepartmentsComponent implements OnInit {
       this.department=this.result;
     })
   }
+
 }

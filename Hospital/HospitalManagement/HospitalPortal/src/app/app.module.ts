@@ -12,6 +12,11 @@ import { MedicinesComponent } from './medicines/medicines.component';
 import { PatientsComponent } from './patients/patients.component';
 import { VisitsComponent } from './visits/visits.component';
 import { AddDepartmentComponent } from './add-department/add-department.component';
+import { AddDoctorComponent } from './add-doctor/add-doctor.component';
+import { AddPatientComponent } from './add-patient/add-patient.component';
+import { AddAssistantComponent } from './add-assistant/add-assistant.component';
+import { AddMedicineComponent } from './add-medicine/add-medicine.component';
+import { AddVisitComponent } from './add-visit/add-visit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { AddDepartmentComponent } from './add-department/add-department.componen
     MedicinesComponent,
     PatientsComponent,
     VisitsComponent,
-    AddDepartmentComponent
+    AddDepartmentComponent,
+    AddDoctorComponent,
+    AddPatientComponent,
+    AddAssistantComponent,
+    AddMedicineComponent,
+    AddVisitComponent
   ],
   imports: [
     BrowserModule,

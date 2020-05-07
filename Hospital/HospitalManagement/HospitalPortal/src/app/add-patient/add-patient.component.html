@@ -1,0 +1,11 @@
+<p>add-patient works!</p>
+<form [formGroup]="patientFormGroup">
+
+    Name:<input type="text" formControlName="pName"><br>
+    Mobile No:<input type="text" formControlName="pMobileNo"><br>
+    Doctor Email:<input type="text" formControlName="pEmail"><br>
+    Doctor Address<input type="text" formControlName="pAddress"><br>
+    Age:<input type="number" formControlName="age"><br>
+
+</form>
+<button type="submit" (click)="add()" [disabled]="!patientFormGroup.valid">Add Doctor</button>

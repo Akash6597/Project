@@ -1,0 +1,7 @@
+<p>add-visit works!</p>
+<form [formGroup]="visitFormGroup">
+    Doctor Id:<input type="number" formControlName="dId">
+    Patient Id:<input type="number" formControlName="pId">
+    Assistant Id:<input type="number" formControlName="aId">
+</form>
+<button type="submit" (click)="add()">Add Visit</button>

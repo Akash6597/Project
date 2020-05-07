@@ -1,0 +1,9 @@
+<p>add-doctor works!</p>
+<form [formGroup]="doctorFormGroup">
+    Name:<input type="text" formControlName="doctorName"><br>
+    Mobile No:<input type="text" formControlName="doctorMobileNo"><br>
+    Doctor Email:<input type="text" formControlName="doctorEmail"><br>
+    Doctor Address<input type="text" formControlName="doctorAddress"><br>
+    DepartmentId<input type="number" formControlName="departmentId"><br>
+</form>
+<button type="submit" (click)="add()" [disabled]="!doctorFormGroup.valid">Add Doctor</button>

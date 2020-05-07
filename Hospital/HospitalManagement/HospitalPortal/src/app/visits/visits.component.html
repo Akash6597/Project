@@ -1,1 +1,22 @@
+<button  [routerLink]="['/addvisit']">Add Visit</button>
+
 <p>visits works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>VisitId</th>
+            <th>DoctorId</th>
+            <th>PatientId</th>
+            <th>AssistantId</th>
+           
+        </tr>
+    </thead>
+
+        <tr *ngFor="let d of visit">
+            <td>{{d.visitID}}</td>
+            <td>{{d.doctorId}}</td>
+            <td>{{d.patientId}}</td>
+            <td>{{d.assistantId}}</td>
+        </tr>
+
+    </table>

@@ -1,0 +1,11 @@
+<p>add-assistant works!</p>
+<form [formGroup]="assistantFormGroup">
+
+    Name:<input type="text" formControlName="assistantName"><br>
+    Mobile No:<input type="text" formControlName="assistantMobileNo"><br>
+    Assistant Email:<input type="text" formControlName="assistantEmail"><br>
+    Assistant Address<input type="text" formControlName="assistantAddress"><br>
+    DepartmentId<input type="number" formControlName="departmentId"><br>
+
+</form>
+<button type="submit" (click)="add()" [disabled]="!assistantFormGroup.valid">Add Doctor</button>

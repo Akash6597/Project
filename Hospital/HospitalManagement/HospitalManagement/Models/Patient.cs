@@ -15,7 +15,7 @@ namespace HospitalManagement.Models
 
         public string PatientEmail { get; set; }
 
-        public int Age { get; set; }
+        public int PatientAge { get; set; }
 
         public string PatientAddress { get; set; }
     }
