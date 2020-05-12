@@ -1,0 +1,11 @@
+<p>add-medicins works!</p>
+
+<form [formGroup]="medicinFormGroup">
+    <div class="form-group">
+    Medicine Name:<input type="text" formControlName="medicinName"><br>
+</div>
+    <div class="form-group">
+    Price:<input type="number" formControlName="medicinPrice"><br>
+</div>
+</form>
+<button class="btn btn-primary" type="submit" (click)="add()" [disabled]="!medicinFormGroup.valid">Add Doctor</button>

@@ -1,7 +1,19 @@
 <p>add-visit works!</p>
 <form [formGroup]="visitFormGroup">
-    Doctor Id:<input type="number" formControlName="dId">
-    Patient Id:<input type="number" formControlName="pId">
-    Assistant Id:<input type="number" formControlName="aId">
-</form>
-<button type="submit" (click)="add()">Add Visit</button>
+   <div class="form-group">
+    Doctor Name:<select formControlName="dId">
+    <option *ngFor="let d of doctor" value={{d.doctorId}}>{{d.doctorName}}</option>
+     </select>
+     </div>
+    <div class="form-group">
+     Patient Name:<select formControlName="pId">
+        <option *ngFor="let d of patient" value={{d.patientId}}>{{d.patientName}}</option>
+         </select>
+    </div>
+    <div class="form-group">
+         Assistant Name:<select formControlName="aId">
+            <option *ngFor="let d of assistant" value={{d.assistantId}}>{{d.assistantName}}</option>
+             </select>
+</div>
+            </form>
+<button type="submit" class="btn btn-primary" (click)="add()">Add Visit</button>

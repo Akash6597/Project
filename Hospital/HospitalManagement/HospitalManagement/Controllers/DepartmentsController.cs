@@ -31,7 +31,9 @@ namespace HospitalManagement.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Department>> GetDepartment(int id)
         {
-            var department = await _context.Departments.FindAsync(id);
+            var department = await _context.Departments.SingleOrDefaultAsync<Department>(d=>d.DepartmentId == id);
+
+            department.Doctors =  _context.Doctors.Where(s => s.DepartmentId == id).ToList();
 
             if (department == null)
             {

@@ -1,6 +1,6 @@
 <p>patients works!</p>
 <button  [routerLink]="['/addpatient']">Add Patient</button>
-
+<!-- 
 <table>
     <thead>
         <tr>
@@ -22,4 +22,18 @@
             <td>{{p.patientAge}}</td>
         </tr>
 
-    </table>
+    </table> -->
+    
+    <button (click)="getSelectedRows()">Get Selected Rows</button>
+ <ag-grid-angular
+ #agGrid
+ style="width: 1100px; height: 500px;"
+ class="ag-theme-balham"
+ 
+[rowData]="rowData | async"
+[columnDefs]="coloumnDefs"
+
+rowSelection="multiple"
+[animateRows]="true"
+[pagination]="true"
+></ag-grid-angular>

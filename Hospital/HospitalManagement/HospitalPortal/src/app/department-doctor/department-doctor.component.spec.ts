@@ -1,0 +1,25 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { DepartmentDoctorComponent } from './department-doctor.component';
+
+describe('DepartmentDoctorComponent', () => {
+  let component: DepartmentDoctorComponent;
+  let fixture: ComponentFixture<DepartmentDoctorComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ DepartmentDoctorComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(DepartmentDoctorComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

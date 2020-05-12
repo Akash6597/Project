@@ -1,0 +1,16 @@
+<button class="p-2" [routerLink]="['/addmedicin']">Add Medicine</button>
+
+<p>medicins works!</p>
+
+<ag-grid-angular
+ #agGrid
+ style="width: 800px; height: 500px;"
+ class="ag-theme-balham"
+ 
+[rowData]="rowData | async"
+[columnDefs]="coloumnDefs"
+
+rowSelection="multiple"
+[animateRows]="true"
+[pagination]="true"
+></ag-grid-angular>

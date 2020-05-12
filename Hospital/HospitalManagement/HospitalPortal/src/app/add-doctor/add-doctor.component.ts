@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import{FormGroup, FormBuilder, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-doctor',
@@ -9,7 +10,7 @@ import{FormGroup, FormBuilder, Validators} from '@angular/forms';
 })
 export class AddDoctorComponent implements OnInit {
 
-  constructor(private httpService: HttpClient,private formBuilder:FormBuilder) { }
+  constructor(private httpService: HttpClient,private formBuilder:FormBuilder,private router:Router) { }
 
   doctorFormGroup:FormGroup;
     doctor=[];
@@ -41,6 +42,8 @@ export class AddDoctorComponent implements OnInit {
     departmentId:depid}).subscribe(res=>{
       this.result=res;
       console.log(this.result);
+      this.router.navigate(['doctors']);
+
     });
 }
 }

@@ -11,48 +11,48 @@ namespace HospitalManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MedicinesController : ControllerBase
+    public class PrescriptionsController : ControllerBase
     {
         private readonly HospitalContext _context;
 
-        public MedicinesController(HospitalContext context)
+        public PrescriptionsController(HospitalContext context)
         {
             _context = context;
         }
 
-        // GET: api/Medicines
+        // GET: api/Prescriptions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Medicine>>> GetMedicines()
+        public async Task<ActionResult<IEnumerable<Prescription>>> GetPrescriptions()
         {
-            return await _context.Medicines.ToListAsync();
+            return await _context.Prescriptions.ToListAsync();
         }
 
-        // GET: api/Medicines/5
+        // GET: api/Prescriptions/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Medicine>> GetMedicine(int id)
+        public async Task<ActionResult<Prescription>> GetPrescription(int id)
         {
-            var medicine = await _context.Medicines.FindAsync(id);
+            var prescription = await _context.Prescriptions.FindAsync(id);
 
-            if (medicine == null)
+            if (prescription == null)
             {
                 return NotFound();
             }
 
-            return medicine;
+            return prescription;
         }
 
-        // PUT: api/Medicines/5
+        // PUT: api/Prescriptions/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMedicine(int id, Medicine medicine)
+        public async Task<IActionResult> PutPrescription(int id, Prescription prescription)
         {
-            if (id != medicine.MedicinId)
+            if (id != prescription.PrescriptionId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(medicine).State = EntityState.Modified;
+            _context.Entry(prescription).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace HospitalManagement.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MedicineExists(id))
+                if (!PrescriptionExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace HospitalManagement.Controllers
             return NoContent();
         }
 
-        // POST: api/Medicines
+        // POST: api/Prescriptions
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Medicine>> PostMedicine(Medicine medicine)
+        public async Task<ActionResult<Prescription>> PostPrescription(Prescription prescription)
         {
-            _context.Medicines.Add(medicine);
+            _context.Prescriptions.Add(prescription);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMedicine", new { id = medicine.MedicinId }, medicine);
+            return CreatedAtAction("GetPrescription", new { id = prescription.PrescriptionId }, prescription);
         }
 
-        // DELETE: api/Medicines/5
+        // DELETE: api/Prescriptions/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Medicine>> DeleteMedicine(int id)
+        public async Task<ActionResult<Prescription>> DeletePrescription(int id)
         {
-            var medicine = await _context.Medicines.FindAsync(id);
-            if (medicine == null)
+            var prescription = await _context.Prescriptions.FindAsync(id);
+            if (prescription == null)
             {
                 return NotFound();
             }
 
-            _context.Medicines.Remove(medicine);
+            _context.Prescriptions.Remove(prescription);
             await _context.SaveChangesAsync();
 
-            return medicine;
+            return prescription;
         }
 
-        private bool MedicineExists(int id)
+        private bool PrescriptionExists(int id)
         {
-            return _context.Medicines.Any(e => e.MedicinId == id);
+            return _context.Prescriptions.Any(e => e.PrescriptionId == id);
         }
     }
 }

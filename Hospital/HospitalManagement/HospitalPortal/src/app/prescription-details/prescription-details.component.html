@@ -1,0 +1,11 @@
+<p>prescription-details works!</p>
+<ag-grid-angular
+ #agGrid
+ style="width: 800px; height: 500px;"
+    
+[rowData]="rowData | async"
+[columnDefs]="coloumnDefs"
+rowSelection="multiple"
+[animateRows]="true"
+[pagination]="true"
+ ></ag-grid-angular>

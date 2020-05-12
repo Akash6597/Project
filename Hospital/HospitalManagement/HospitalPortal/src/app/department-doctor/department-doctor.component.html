@@ -1,0 +1,26 @@
+<p>department-doctor works!</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>DoctorId</th>
+            <th scope="col">Doctor Name</th>
+            <th scope="col">Doctor MobileNo</th>
+            <th scope="col">Doctor Email</th>
+            <th scope="col">Doctor Address</th>
+            <th scope="col">visit</th>
+            
+        </tr>
+    </thead>
+    <tbody *ngFor="let d of doctor">
+        <tr scope="row" *ngIf="d.departmentId=== index">
+            <td>{{d.doctorId}}</td>
+            <td>{{d.doctorName}}</td>
+            <td>{{d.doctorMobileNo}}</td>
+            <td>{{d.doctorEmail}}</td>
+            <td>{{d.doctorAddress}}</td>
+            <td><a class="btn btn-info" (click)="visits(d.doctorId)" >view</a></td>
+        </tr>
+    </tbody>
+</table>
+<!-- {{doctors}} -->

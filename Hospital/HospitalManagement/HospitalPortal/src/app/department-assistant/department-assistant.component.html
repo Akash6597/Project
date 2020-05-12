@@ -1,0 +1,20 @@
+<p>department-assistant works!</p>
+<table class="table table-bordered">
+    <thead>
+        <tr >
+            <th scope="col">Assistant Name</th>
+            <th scope="col">Assistant MobileNo</th>
+            <th scope="col">Assistant Email</th>
+            <th scope="col">Assistant Address</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let a of assistant">
+        <tr scope="row" *ngIf="a.departmentId=== index">
+            <td>{{a.assistantName}}</td>
+            <td>{{a.assistantMobileNo}}</td>
+            <td>{{a.assistantEmail}}</td>
+            <td>{{a.assistantAddress}}</td>
+
+        </tr>
+    </tbody>
+</table>

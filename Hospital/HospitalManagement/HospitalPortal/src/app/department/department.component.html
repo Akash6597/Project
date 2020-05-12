@@ -1,0 +1,22 @@
+<div class="d-flex flex-row">
+    <button class="p-2" [routerLink]="['/doctors']">Doctors</button>
+    <button class="p-2" [routerLink]="['/assistants']">Assitant</button>
+    <button class="p-2" [routerLink]="['/patients']">Patient</button>
+    <button class="p-2" [routerLink]="['/medicin']">Medicine</button>
+    <button class="p-2" [routerLink]="['/visits']">Visits</button>
+    <button class="p-2" [routerLink]="['/prescriptiondetail']">PrescriptionDetails</button>
+    </div>
+    
+<p>department works!</p>
+
+<input type="text" placeholder="search" (keyup)="quickSearch()" [(ngModel)]="searchValue" ><br>
+
+<ag-grid-angular
+class="ag-theme-balham"
+style="width: 1000px; height: 500px; "
+[columnDefs]="colDefs"
+[animateRows]="true"
+rowSelection="multiple"
+[animateRows]="true"
+[pagination]="true"
+(gridReady)="onGridReady($event)"></ag-grid-angular>

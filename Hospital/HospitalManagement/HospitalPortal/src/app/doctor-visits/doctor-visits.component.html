@@ -1,0 +1,16 @@
+<p>doctor-visits works!</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">VisitId</th>
+            <th scope="col">PatientName</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let v of doctor">
+        <tr scope="row" *ngIf="v.doctorId == id">
+            <td>{{v.visitId}}</td>
+            <td>{{v.patientName}}</td>
+        </tr>
+    </tbody>
+</table>

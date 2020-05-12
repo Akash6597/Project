@@ -1,26 +1,51 @@
-<button  [routerLink]="['/doctors']">Doctors</button>
-<button  [routerLink]="['/assistants']">Assitant</button>
-<button  [routerLink]="['/patients']">Patient</button>
-<button  [routerLink]="['/medicines']">Medicine</button>
-<button  [routerLink]="['/visits']">Visits</button>
+<div class="d-flex flex-row">
+<button class="p-2" [routerLink]="['/doctors']">Doctors</button>
+<button class="p-2" [routerLink]="['/assistants']">Assitant</button>
+<button class="p-2" [routerLink]="['/patients']">Patient</button>
+<button class="p-2" [routerLink]="['/medicines']">Medicine</button>
+<button class="p-2" [routerLink]="['/visits']">Visits</button>
+<button class="p-2" [routerLink]="['/prescriptiondetail']">Visits</button>
+
+</div>
 <p>departments works!</p>
 
-<button  [routerLink]="['/adddepartment']">Add Department</button>
+<button class="btn btn-secondary" [routerLink]="['/adddepartment']">Add Department</button>
 
-<div>
-    <table>
+<!-- <div class="container">
+    <div>
+    <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Department Id</th>
-                <th>Department Name</th>
-            </tr>
+                <th scope="col">Department Id</th>
+                <th scope="col">Department Name</th>
+                <th scope="col">Doctors</th>
+                <th scope="col">Assistants</th> -->
+                <!-- <th scope="col">Patients</th> -->
+            <!-- </tr>
         </thead>
 
-            <tr *ngFor="let d of department">
-                <td>{{d.departmentId}}</td>
+            <tr scope="row" *ngFor="let d of departments">
+                <td >{{d.departmentId}}</td>
                 <td>{{d.departmentName}}</td>
-                <!-- <td><a href="" [routerLink]="['/doctors',d.departmentId]">view</a></td> -->
-            </tr>
+                <td><btn class="btn btn-info" [routerLink]="['dd',d.departmentId]" >view</btn></td>
+                <td><btn class="btn btn-info" [routerLink]="['da',d.departmentId]" >view</btn></td> -->
+                <!-- <td><btn class="btn btn-info" [routerLink]="['da',d.departmentId]" >view</btn></td> -->
+            <!-- </tr>
 
         </table>
-</div>
+    </div>
+ </div> -->
+<button (click)="getSelectedRows()">Get Selected Rows</button>
+
+<ag-grid-angular
+ #agGrid
+ style="width: 500px; height: 500px;"
+ class="ag-theme-balham"
+ 
+[rowData]="rowData | async"
+[columnDefs]="coloumnDefs"
+
+rowSelection="multiple"
+[animateRows]="true"
+[pagination]="true"
+></ag-grid-angular>

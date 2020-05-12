@@ -10,7 +10,7 @@ import { from } from 'rxjs';
 })
 export class AddDepartmentComponent implements OnInit {
 
-  constructor(private httpService: HttpClient,private formBuilder:FormBuilder) { }
+  constructor(private httpService: HttpClient,private formBuilder:FormBuilder,private router:Router) { }
 
   departmentFormGroup:FormGroup;
     department=[];
@@ -26,6 +26,8 @@ export class AddDepartmentComponent implements OnInit {
     this.httpService.post(this.rootURL+'/Departments',{departmentName:this.departmentFormGroup.controls.departmentName.value}).subscribe(res=>{
       this.result=res;
       console.log(this.result);
+      this.router.navigate(['departments']);
+
     });
 }
 }

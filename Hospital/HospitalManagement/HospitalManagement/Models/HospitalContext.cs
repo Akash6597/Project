@@ -12,8 +12,12 @@ namespace HospitalManagement.Models
         public DbSet<Department> Departments { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Assistant> Assistants { get; set; }
-        public DbSet<Medicine> Medicines { get; set; }
+        public DbSet<Medicin> Medicins { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Visit> Visits { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
+        public DbSet<PrescriptionDetail> PrescriptionDetails { get; set; }
+        public DbSet<vPrescription> vPrescriptions { get; set; }
+        public DbSet<vVisit> vVisits { get; set; }
     }
 }

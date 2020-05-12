@@ -1,11 +1,21 @@
 <p>add-assistant works!</p>
-<form [formGroup]="assistantFormGroup">
-
-    Name:<input type="text" formControlName="assistantName"><br>
-    Mobile No:<input type="text" formControlName="assistantMobileNo"><br>
-    Assistant Email:<input type="text" formControlName="assistantEmail"><br>
-    Assistant Address<input type="text" formControlName="assistantAddress"><br>
-    DepartmentId<input type="number" formControlName="departmentId"><br>
-
+<div>
+<form [formGroup]="assistantFormGroup" style="width: 300px; ">
+ <div class="form-group">
+    Name:<input type="text" class="form-control" formControlName="assistantName">
+</div>
+<div class="form-group">
+    Mobile No:<input type="text" class="form-control" formControlName="assistantMobileNo"><br>
+    </div>
+    <div class="form-group">
+    Assistant Email:<input type="text" class="form-control" formControlName="assistantEmail"><br>
+    </div>
+    <div class="form-group">
+    Assistant Address<input type="text" class="form-control" formControlName="assistantAddress"><br>
+    </div>
+    <div class="form-group">
+    DepartmentId<input type="number" class="form-control" formControlName="departmentId"><br>
+</div>
 </form>
-<button type="submit" (click)="add()" [disabled]="!assistantFormGroup.valid">Add Doctor</button>
+<button class="btn btn-primary" type="submit" (click)="add()" [disabled]="!assistantFormGroup.valid">Add Doctor</button>
+</div>

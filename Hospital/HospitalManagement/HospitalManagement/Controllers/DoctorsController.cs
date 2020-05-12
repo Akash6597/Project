@@ -32,7 +32,7 @@ namespace HospitalManagement.Controllers
         public async Task<ActionResult<Doctor>> GetDoctor(int id)
         {
             var doctor = await _context.Doctors.FindAsync(id);
-
+          
             if (doctor == null)
             {
                 return NotFound();

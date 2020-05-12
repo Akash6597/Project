@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import{FormGroup, FormBuilder, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-assistant',
   templateUrl: './add-assistant.component.html',
@@ -14,7 +15,7 @@ export class AddAssistantComponent implements OnInit {
     result:any;
     readonly rootURL = 'https://localhost:5001/api';
 
-  constructor(private httpService: HttpClient,private formBuilder:FormBuilder) { }
+  constructor(private httpService: HttpClient,private formBuilder:FormBuilder,private router:Router) { }
 
   ngOnInit(): void {
     this.assistantFormGroup=this.formBuilder.group({
@@ -40,6 +41,8 @@ export class AddAssistantComponent implements OnInit {
      departmentId:depid}).subscribe(res=>{
        this.result=res;
        console.log(this.result);
+       this.router.navigate(['assistants']);
+
      });
  }
 }

@@ -1,11 +1,27 @@
 <p>add-patient works!</p>
 <form [formGroup]="patientFormGroup">
+    <div class="form-group">
+    Name:<input type="text" formControlName="pName">
+    <small class="form-text text-danger" *ngIf="patientFormGroup.controls.pName.invalid && patientFormGroup.controls.pName.touched" >Patient Name is required</small>
+    </div>
 
-    Name:<input type="text" formControlName="pName"><br>
-    Mobile No:<input type="text" formControlName="pMobileNo"><br>
-    Doctor Email:<input type="text" formControlName="pEmail"><br>
-    Doctor Address<input type="text" formControlName="pAddress"><br>
-    Age:<input type="number" formControlName="age"><br>
+    <div class="form-group">
+    Mobile No:<input type="text" formControlName="pMobileNo">
+    <small class="form-text text-danger" *ngIf="patientFormGroup.controls.pMobileNo.invalid && patientFormGroup.controls.pMobileNo.touched" >Mobile Number is required</small>
+    </div>
+    <div class="form-group">
+    Patient Email:<input type="text" formControlName="pEmail">
+    <small class="form-text text-danger" *ngIf="patientFormGroup.controls.pEmail.invalid && patientFormGroup.controls.pEmail.touched" >Enter a Valid Email</small>
+    
+</div>
+    <div class="form-group">
+    Patient Address<input type="text" formControlName="pAddress">
+    <small class="form-text text-danger" *ngIf="patientFormGroup.controls.pAddress.invalid && patientFormGroup.controls.pAddress.touched" >Address is Required</small>
+</div>
+    <div class="form-group">
+    Age:<input type="number" formControlName="age">
+    <small class="form-text text-danger" *ngIf="patientFormGroup.controls.age.invalid && patientFormGroup.controls.age.touched" >Age is Required</small>
+</div>
 
 </form>
-<button type="submit" (click)="add()" [disabled]="!patientFormGroup.valid">Add Doctor</button>
+<button type="submit" class="btn btn-primary" (click)="add()" >Add Doctor</button>

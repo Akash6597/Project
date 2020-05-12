@@ -1,8 +1,9 @@
 <p>add-department works!</p>
 <div>
-<form [formGroup]="departmentFormGroup">
-    Department Name: <input type="text" formControlName="departmentName">
-
-    <button (click)="add()">Add</button>
+<form [formGroup]="departmentFormGroup" style="width: 300px; ">
+    <div class="form-group">
+    Department Name: <input type="text" formControlName="departmentName"><br>
+</div>
+    <button class="btn btn-primary" (click)="add()">Add</button>
 </form>
 </div>

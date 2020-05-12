@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-patient',
@@ -9,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AddPatientComponent implements OnInit {
 
-  constructor(private httpService: HttpClient,private formBuilder:FormBuilder) { }
+  constructor(private httpService: HttpClient,private formBuilder:FormBuilder,private router:Router) { }
 
   patientFormGroup:FormGroup;
     doctor=[];
@@ -19,8 +21,8 @@ export class AddPatientComponent implements OnInit {
   ngOnInit(): void {
     this.patientFormGroup=this.formBuilder.group({
       pName:['',Validators.required],
-      pMobileNo:['',[Validators.required,Validators.email]],
-      pEmail:['',Validators.compose([Validators.required,Validators.minLength(10),Validators.maxLength(10),Validators.pattern('[0-9]*')])],
+      pMobileNo:['',Validators.compose([Validators.required,Validators.minLength(10),Validators.maxLength(10),Validators.pattern('[0-9]*')])],
+      pEmail:['',Validators.email],
       pAddress:['',Validators.required],
       age:['',Validators.required]
   });
@@ -40,6 +42,8 @@ export class AddPatientComponent implements OnInit {
      patientAge:age}).subscribe(res=>{
        this.result=res;
        console.log(this.result);
-     });
+       this.router.navigate(['patients']);
+      });
+
  }
 }

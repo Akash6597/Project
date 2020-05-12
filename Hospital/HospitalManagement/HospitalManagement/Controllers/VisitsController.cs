@@ -22,9 +22,25 @@ namespace HospitalManagement.Controllers
 
         // GET: api/Visits
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Visit>>> GetVisits()
+        public async Task<ActionResult<IEnumerable<vVisit>>> GetVisits()
         {
-            return await _context.Visits.ToListAsync();
+            return await _context.vVisits.ToListAsync();
+            /*            var visit = await _context.Visits.Include(d => d.Doctors).Include(p => p.Patients).Include(a => a.Assistants).ToListAsync();
+
+                        var v = (from vis in _context.Visits
+                                 join d in _context.Doctors on vis.DoctorId equals d.DoctorId
+                                 join p in _context.Patients on vis.PatientId equals p.PatientId
+                                 join a in _context.Assistants on vis.AssistantId equals a.AssistantId
+                                 select new
+                                 {
+                                     vis.VisitId,
+                                     d.DoctorName,
+                                     p.PatientName,
+                                     a.AssistantName
+                                 }).ToListAsync();
+
+
+                        return visit;*/
         }
 
         // GET: api/Visits/5
