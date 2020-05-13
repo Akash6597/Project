@@ -14,7 +14,10 @@ namespace HospitalManagement.Models
         public int VisitId{get;set;}
 
         //Custom Attribute
+        public int MedicinId { get; set; }
 
-        public List<PrescriptionDetail> PrescriptionDetails { get; set; }
+        public string TimeToTake { get; set; }
+        
+        //public List<PrescriptionDetail> PrescriptionDetails { get; set; }
     }
 }

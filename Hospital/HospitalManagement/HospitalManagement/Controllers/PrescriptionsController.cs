@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HospitalManagement.Models;
+using Microsoft.Data.SqlClient;
 
 namespace HospitalManagement.Controllers
 {
@@ -79,10 +80,17 @@ namespace HospitalManagement.Controllers
         [HttpPost]
         public async Task<ActionResult<Prescription>> PostPrescription(Prescription prescription)
         {
-            _context.Prescriptions.Add(prescription);
-            await _context.SaveChangesAsync();
+            var data = _context.Database.ExecuteSqlCommand("spPrescription @visitid,@medicineid,@timetotake ",
+            new SqlParameter("@visitid", prescription.VisitId),
+                new SqlParameter("@medicineid", prescription.MedicinId),
+                new SqlParameter("@timetotake", prescription.TimeToTake)
+            );
+            return Ok(data);
 
-            return CreatedAtAction("GetPrescription", new { id = prescription.PrescriptionId }, prescription);
+            /*  _context.Prescriptions.Add(prescription);
+              await _context.SaveChangesAsync();
+
+              return CreatedAtAction("GetPrescription", new { id = prescription.PrescriptionId }, prescription);*/
         }
 
         // DELETE: api/Prescriptions/5

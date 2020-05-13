@@ -17,6 +17,7 @@ import { DepartmentComponent } from './department/department.component';
 import { PrescriptionDetailsComponent } from './prescription-details/prescription-details.component';
 import { MedicinsComponent } from './medicins/medicins.component';
 import { AddMedicinsComponent } from './add-medicins/add-medicins.component';
+import { AddPrescriptionComponent } from './add-prescription/add-prescription.component';
 
 
 const routes: Routes = [{
@@ -49,6 +50,8 @@ const routes: Routes = [{
     path:'dv/:id',component:DoctorVisitsComponent
   },{
     path:'prescriptiondetail',component:PrescriptionDetailsComponent
+  },{
+    path:'addp',component:AddPrescriptionComponent
   },{
     path:'medicin',component:MedicinsComponent
   },{

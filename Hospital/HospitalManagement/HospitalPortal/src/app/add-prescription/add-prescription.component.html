@@ -1,1 +1,21 @@
 <p>add-prescription works!</p>
+<div>
+    <form [formGroup]="prescriptionFormGroup" style="width: 300px; ">
+        <div class="form-group">
+            VisitId:<select formControlName="visitId">
+                <option *ngFor="let v of visit" value={{v.visitId}}>{{v.visitId}}</option>
+            </select>
+        <!-- Visit Id: <input type="number" formControlName="visitId"><br> -->
+    </div>
+    <div class="form-group">
+        Medicine Id: <select formControlName="medicineId">
+                <option *ngFor="let m of medicine" value="{{m.medicinId}}">{{m.medicinId}}</option>
+        </select>
+        <!-- <input type="number" formControlName="medicineId"><br> -->
+    </div>
+    <div class="form-group">
+        Time To Take: <input type="text" formControlName="timeToTake"><br>
+    </div>
+        <button class="btn btn-primary" (click)="add()" >Add</button>
+    </form>
+    </div>
