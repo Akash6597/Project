@@ -18,5 +18,9 @@ namespace HospitalManagement.Models
         public int PatientAge { get; set; }
 
         public string PatientAddress { get; set; }
+
+        public DateTime DateAddmission { get; set; }
+
+        public DateTime DateDischarge { get; set; }
     }
 }
